@@ -104,7 +104,7 @@ root   >>>   O9NmYDaJLpJQ6wl2/3TVpg==
 #### 解密
 
 ```
-$ java -jar jasyptDecrypt.jar decode EbfYkitulv73I2p0mXI50JMXoaxZTKJ7 jjWe+i7UJUZ7yOVzGTxlcg==
+$ java -jar jasyptDecrypt.jar decode EbfYkitulv73I2p0mXI50JMXoaxZTKJ7 vpIBjT3RT8mf6pBjiKJuqA==
        _                 _____  _   _____                             _   
       | |               |  __ \| | |  __ \                           | |  
       | | __ _ ___ _   _| |__) | |_| |  | | ___  ___ _ __ _   _ _ __ | |_ 
@@ -119,6 +119,6 @@ Usage:
 [*] java -jar jasyptDecrypt.jar encode password Text
 
 [-] Decrypt: 
-jjWe+i7UJUZ7yOVzGTxlcg==   >>>   root
+vpIBjT3RT8mf6pBjiKJuqA==   >>>   root
 
 ```
