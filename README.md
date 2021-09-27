@@ -1,5 +1,12 @@
 # spring-ENC | sprint encode (plan text) get enc password
 
+参考链接：
+
+How to encrypt user passwords
+
+http://www.jasypt.org/howtoencryptuserpasswords.html
+
+
 ## 0x00简介
 
 
