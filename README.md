@@ -57,3 +57,68 @@ https://www.devglan.com/online-tools/jasypt-online-encryption-decryption
 ![](./jasypt.png)
 
 `username: ENC(vpIBjT3RT8mf6pBjiKJuqA==)` to `username: root`
+
+
+### java 代码解密
+
+#### 使用方法：
+
+```
+$ java -jar jasyptDecrypt.jar
+       _                 _____  _   _____                             _   
+      | |               |  __ \| | |  __ \                           | |  
+      | | __ _ ___ _   _| |__) | |_| |  | | ___  ___ _ __ _   _ _ __ | |_ 
+  _   | |/ _` / __| | | |  ___/| __| |  | |/ _ \/ __| '__| | | | '_ \| __|
+ | |__| | (_| \__ \ |_| | |    | |_| |__| |  __/ (__| |  | |_| | |_) | |_ 
+  \____/ \__,_|___/\__, |_|     \__|_____/ \___|\___|_|   \__, | .__/ \__|
+                    __/ |                                  __/ | |        
+                   |___/                                  |___/|_|        
+
+Usage:
+[*] java -jar jasyptDecrypt.jar decode password EncodeText
+[*] java -jar jasyptDecrypt.jar encode password Text
+```
+
+#### 加密
+
+```
+$ java -jar jasyptDecrypt.jar encode EbfYkitulv73I2p0mXI50JMXoaxZTKJ7 root
+       _                 _____  _   _____                             _   
+      | |               |  __ \| | |  __ \                           | |  
+      | | __ _ ___ _   _| |__) | |_| |  | | ___  ___ _ __ _   _ _ __ | |_ 
+  _   | |/ _` / __| | | |  ___/| __| |  | |/ _ \/ __| '__| | | | '_ \| __|
+ | |__| | (_| \__ \ |_| | |    | |_| |__| |  __/ (__| |  | |_| | |_) | |_ 
+  \____/ \__,_|___/\__, |_|     \__|_____/ \___|\___|_|   \__, | .__/ \__|
+                    __/ |                                  __/ | |        
+                   |___/                                  |___/|_|        
+
+Usage:
+[*] java -jar jasyptDecrypt.jar decode password EncodeText
+[*] java -jar jasyptDecrypt.jar encode password Text
+
+[-] Encrypt: 
+root   >>>   O9NmYDaJLpJQ6wl2/3TVpg==
+
+```
+
+#### 解密
+
+```
+$ java -jar jasyptDecrypt.jar decode EbfYkitulv73I2p0mXI50JMXoaxZTKJ7 jjWe+i7UJUZ7yOVzGTxlcg==
+       _                 _____  _   _____                             _   
+      | |               |  __ \| | |  __ \                           | |  
+      | | __ _ ___ _   _| |__) | |_| |  | | ___  ___ _ __ _   _ _ __ | |_ 
+  _   | |/ _` / __| | | |  ___/| __| |  | |/ _ \/ __| '__| | | | '_ \| __|
+ | |__| | (_| \__ \ |_| | |    | |_| |__| |  __/ (__| |  | |_| | |_) | |_ 
+  \____/ \__,_|___/\__, |_|     \__|_____/ \___|\___|_|   \__, | .__/ \__|
+                    __/ |                                  __/ | |        
+                   |___/                                  |___/|_|        
+
+Usage:
+[*] java -jar jasyptDecrypt.jar decode password EncodeText
+[*] java -jar jasyptDecrypt.jar encode password Text
+
+[-] Decrypt: 
+jjWe+i7UJUZ7yOVzGTxlcg==   >>>   root
+
+```
