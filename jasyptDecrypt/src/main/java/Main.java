@@ -1,27 +1,24 @@
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 
 /**
- * @author: jas502n
+ * @author jas502n
  * Create Time: 2021/9/27 星期一
  * Project_Name: jasyptDecrypt
  * Package_Name: PACKAGE_NAME
  */
 public class Main {
 
-    private static String CryptoPassword = "EbfYkitulv73I2p0mXI50JMXoaxZTKJ7";
 
-    public static String decryptor(String CryptoPassword, String EncodeText) {
+    public static String decryptor(String cryptoPassword, String encodeText) {
         StandardPBEStringEncryptor decryptor = new StandardPBEStringEncryptor();
-        decryptor.setPassword(CryptoPassword);
-        String decodeText = decryptor.decrypt(EncodeText);
-        return decodeText;
+        decryptor.setPassword(cryptoPassword);
+        return decryptor.decrypt(encodeText);
     }
 
-    public static String encryptor(String CryptoPassword, String Text) {
+    public static String encryptor(String cryptoPassword, String text) {
         StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
-        encryptor.setPassword(CryptoPassword);
-        String encryptedPassword = encryptor.encrypt(Text);
-        return encryptedPassword;
+        encryptor.setPassword(cryptoPassword);
+        return encryptor.encrypt(text);
     }
 
     public static void main(String[] args) {
@@ -45,17 +42,17 @@ public class Main {
             }
             if (args.length == 3) {
                 String option = args[0];
-                if (option.toLowerCase().equals("decode")) {
-                    String CryptoPassword = args[1];
-                    String EncodeText = args[2];
+                if (option.equalsIgnoreCase("decode")) {
+                    String cryptoPassword = args[1];
+                    String encodeText = args[2];
                     System.out.println(bannerInfo);
-                    System.out.println("[-] Decrypt: \n" + EncodeText + "   >>>   " + decryptor(CryptoPassword, EncodeText) + "\n");
+                    System.out.println("[-] Decrypt: \n" + encodeText + "   >>>   " + decryptor(cryptoPassword, encodeText) + "\n");
                 }
-                if (option.toLowerCase().equals("encode")) {
-                    String CryptoPassword = args[1];
-                    String Text = args[2];
+                if (option.equalsIgnoreCase("encode")) {
+                    String cryptoPassword = args[1];
+                    String text = args[2];
                     System.out.println(bannerInfo);
-                    System.out.println("[-] Encrypt: \n" + Text + "   >>>   " + encryptor(CryptoPassword, Text) + "\n");
+                    System.out.println("[-] Encrypt: \n" + text + "   >>>   " + encryptor(cryptoPassword, text) + "\n");
                 }
 
             }
